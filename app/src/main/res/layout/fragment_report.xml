@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:layout_marginBottom="@dimen/margin_bawah"
+    tools:context=".ui.profil.ProfilFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:hint="Tanggal Mulai"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/report_tv_tglmulai"
+                    android:textSize="18sp"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:hint="Tanggal Selesai"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/report_tv_tglselesai"
+                    android:textSize="18sp"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:hint="Jenis Dokumen"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <Spinner
+                    android:id="@+id/report_spin_jenisdokumen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/jenis_dokumen"></Spinner>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/report_btn_harusdiservice"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Harus Diservice"
+                    android:textSize="22sp"/>
+
+                <Button
+                    android:id="@+id/report_btn_sedangdiservice"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sedang Diservice"
+                    android:textSize="22sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/report_btn_sudahselesai"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sudah Selesai"
+                    android:textSize="22sp"/>
+
+                <Button
+                    android:id="@+id/report_btn_sudahdiambil"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sudah Diambil"
+                    android:textSize="22sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

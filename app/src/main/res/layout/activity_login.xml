@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/shapebginput"
+            android:padding="20dp"
+            android:elevation="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/halaman_login"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:hint="Email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_edittext_email"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:hint="Password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_edittext_password"
+                    android:textSize="18sp"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/login_btnlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_login"
+                android:textSize="22sp"/>
+
+            <Button
+                android:id="@+id/login_btnregister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_register"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/login_txtlupapassword"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="@string/txt_edittext_lupapassword" />
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

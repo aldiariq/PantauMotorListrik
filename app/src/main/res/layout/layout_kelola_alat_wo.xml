@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:background="#ffffff">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:elevation="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kelola Alat WO"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:hint="Kode Alat"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/layoutkelolaalatwo_et_kode_alat"
+                    android:textSize="18sp"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:hint="Nama Alat"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/layoutkelolaalatwo_et_nama_alat"
+                    android:textSize="18sp"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:hint="Keterangan Alat"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/layoutkelolaalatwo_et_keterangan"
+                    android:textSize="18sp"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:hint="Tanggal Masuk"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/layoutkelolaalatwo_tv_tglbeli"
+                    android:textSize="18sp"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:hint="Usia Maksimum (Tahun)"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/layoutkelolaalatwo_et_usia_maksimum"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:hint="Usia Rekomendasi (Hari)"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/layoutkelolaalatwo_et_usia_rekomendasi"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>
